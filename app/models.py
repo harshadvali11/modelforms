@@ -19,50 +19,7 @@ class Webpage(models.Model):
 
 class Access_Records(models.Model):
     name=models.ForeignKey(Webpage,on_delete=models.CASCADE)
-    date=models.DateField(auto_now=True)
-
-
-
-
-#auto_now=True
-'''
-
-if date is given then i will consider the given date
-
-if u r not providing
-then 
-models r created on 5-sep-2020
-
-inserting the data on 5-sep-2020
-
-date=5-sep-2020
-
-inserting the data on 10-sep-2020
-
-date=10-sep-2020
-
-
-
-
-
-auto_now_add=True
-
-if date is given then i will consider the given date
-
-if u r not providing then 
-
-models r created on 5-sep-2020
-
-inserting the data on 5-sep-2020
-
-date=5-sep-2020
-
-inserting the data on 10-sep-2020
-
-date=5-sep-2020
-
-'''
-
+    date=models.DateField()
 
 
 

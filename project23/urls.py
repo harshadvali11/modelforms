@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('topicform/',views.topicform,name='topicform'),
     path('webpageform/',views.webpageform,name='webpageform'),
+    path('accessform/',views.accessform,name='accessform'),
 ]

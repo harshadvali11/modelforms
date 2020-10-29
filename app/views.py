@@ -20,3 +20,24 @@ def webpageform(request):
         if form_data.is_valid():
             form_data.save()
     return render(request,'webpageform.html',context={'form':form})
+
+def accessform(request):
+    form=AccessForm()
+    if request.method=="POST":
+        form_data=AccessForm(request.POST)
+        if form_data.is_valid():
+            form_data.save()
+    
+    return render(request,'accessform.html',context={'form':form})
+
+
+
+
+
+
+
+
+
+
+
+
